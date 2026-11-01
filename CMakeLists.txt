@@ -11,5 +11,6 @@ foreach(fonte ${FONTES})
     endif()
     get_filename_component(nome ${fonte} NAME_WE)
     string(REPLACE " " "_" nome ${nome})
-    add_executable(${nome} ${fonte})
+    add_executable(${nome} ${fonte}
+            DFS/DFS.cpp)
 endforeach()
